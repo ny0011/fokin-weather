@@ -41,4 +41,22 @@ blank, yes
 - 시뮬레이터 : ctrl+r or ctrl+d(development mode)
 - 핸드폰 : 흔들어서 development mode -> restart
 
-* debug remote js :
+* debug remote js : Google developer tools를 사용해 애플리케이션 디버깅을 도와줌. 성능 저하됨
+
+### 0.5 How does React Native Work?
+
+- 모바일 자체 기능을 많이 사용하지 않을 때
+  (ex: 3d 게임, AR 등등)
+- 인스타그램처럼 글쓰고 반응하는 작업에 좋음
+
+- StyleSheet API를 사용해서 CSS를 지정할 수 있음
+- 하지만 <View>에서 스타일을 지정했다고 View 내부에 있는 <Text>를 수정할 수는 없음.
+- Text도 따로 스타일 지정을 해주자
+- 그런데 width를 px 단위로 설정하면 에러 발생함. %로 해줘야 함.
+
+```
+text: {
+    color: "white"
+    width: "100%"
+  }
+```
