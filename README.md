@@ -60,3 +60,17 @@ text: {
     width: "100%"
   }
 ```
+
+###1.0 Layouts with Flexbox in React Native
+
+- React Native에서 모든 flexbox는 flexDirection이 column이다. 모바일은 세로가 기니까!
+- View는 div 태그 같은 것.
+- style={styles.yellowView} 이렇게 하는 대신
+  style={{flex: 1,
+      backgroundColor: "yellow"}} 이렇게 해도 됨
+- flex: 1 -> 모든 공간을 다 사용할 수 있음
+
+```
+동등한 위치에 있는 view1, view2 2개가 있다고 생각해보자
+view1,2 모두 flex: 1이면 모든 공간을 차지해야 하기 때문에 공간을 1/2씩 나누어 가지게 된다. 비율에 따라서 크기가 변함.
+```
