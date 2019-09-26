@@ -125,3 +125,8 @@ import axios from "axios";
 2. 날씨 아이콘
 3. 글씨
 4. 배경색
+
+#2.1 Getting the Condition Names
+
+- 날씨 분류가 어떻게 되는지 문서에서 확인해보자
+  https://openweathermap.org/weather-conditions
