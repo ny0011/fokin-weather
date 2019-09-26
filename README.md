@@ -126,7 +126,16 @@ import axios from "axios";
 3. 글씨
 4. 배경색
 
-#2.1 Getting the Condition Names
+### 2.1 Getting the Condition Names
 
 - 날씨 분류가 어떻게 되는지 문서에서 확인해보자
   https://openweathermap.org/weather-conditions
+
+### 2.2 Icons and Styling
+
+1. Icon
+
+- expo/vector-icons 모듈을 이미 가지고 있음
+- 유명한 아이콘들을 갖고 있음
+  https://docs.expo.io/versions/latest/guides/icons/#expovector-icons
+- icon 개수가 많은 디렉토리(?)를 불러온다(MaterialCommunityIcons)
