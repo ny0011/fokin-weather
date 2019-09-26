@@ -114,3 +114,14 @@ npm add axios && npm install
 
 import axios from "axios";
 ```
+
+### 2.0 Displaying Temperature
+
+- 섭씨 표기는 api를 보낼 때 units=metric, 화씨는 units=imperial
+- 시뮬레이터의 위치를 바꾸려면 Debug > location > custom location
+- 날씨정보를 화면에 보여주자
+
+1. 온도
+2. 날씨 아이콘
+3. 글씨
+4. 배경색
