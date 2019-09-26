@@ -102,3 +102,15 @@ view1,2 모두 flex: 1이면 모든 공간을 차지해야 하기 때문에 공�
 - permission을 받으려면 Location.requestPermissionsAsync()로 사용자에게 물어보자
 - return할 때 permission이 허가되었으면 promise를 리턴하고 거부되었으면 reject을 리턴함
 - try - catch로 허가여부 알아보자
+
+### 1.4 Getting the Weather
+
+- weather 서버 API에서 날씨정보를 가져와보자
+  https://openweathermap.org/current
+- axios로 http request 보내기
+
+```
+npm add axios && npm install
+
+import axios from "axios";
+```
