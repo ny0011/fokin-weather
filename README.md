@@ -139,3 +139,24 @@ import axios from "axios";
 - 유명한 아이콘들을 갖고 있음
   https://docs.expo.io/versions/latest/guides/icons/#expovector-icons
 - icon 개수가 많은 디렉토리(?)를 불러온다(MaterialCommunityIcons)
+
+### 2.3 Background Gradient
+
+1. LinearGradient
+https://docs.expo.io/versions/latest/sdk/linear-gradient/
+
+- 배경색을 그라데이션 주는 효과.
+- 가장 바깥 View 대신에 LinearGradient 태그를 주면 됨. 
+
+```
+$ expo install expo-linear-gradient
+```
+
+2. StatusBar
+- react native가 지원하는 모듈.
+- status bar를 바꾸고 싶을 때 가져오자
+- 어느 위치에 넣든 다른 컴포넌트의 위치에 영향을 주지 않는다
+```
+!! 현재 버전에서는 다크모드를 지원하지 않는다..ㅜㅜ 업그레이드 하자
+$ expo upgrade
+```
