@@ -11,15 +11,21 @@ const weatherOptions = {
   },
   Thunderstorm: {
     iconName: "weather-lightning",
-    gradient: ["#373B44", "#4286f4"]
+    gradient: ["#373B44", "#4286f4"],
+    title: "Thunderstorm in the house",
+    subtitle: "Actually, outside of the house"
   },
   Drizzle: {
     iconName: "weather-hail",
-    gradient: ["#89F7FE", "#66A6FF"]
+    gradient: ["#89F7FE", "#66A6FF"],
+    title: "Drizzle",
+    subtitle: "tiny rain"
   },
   Rain: {
     iconName: "weather-rainy",
-    gradient: ["#00C6FB", "#005BEA"]
+    gradient: ["#00C6FB", "#005BEA"],
+    title: "Raining like a MF",
+    subtitle: "For more info look outside"
   },
   Snow: {
     iconName: "weather-snowy",
@@ -33,7 +39,9 @@ const weatherOptions = {
   },
   Clear: {
     iconName: "weather-sunny",
-    gradient: ["#FF7300", "#FEF253"]
+    gradient: ["#FF7300", "#FEF253"],
+    title: "Sunny as fuck",
+    subtitle: "Go get your ass burnt"
   },
   Clouds: {
     iconName: "weather-cloudy",
@@ -43,11 +51,15 @@ const weatherOptions = {
   },
   Mist: {
     iconName: "weather-hail",
-    gradient: ["#4DA0B0", "#D39D38"]
+    gradient: ["#4DA0B0", "#D39D38"],
+    title: "Mist!",
+    subtitle: "It's like you have no glasses on."
   },
   Dust: {
     iconName: "weather-hail",
-    gradient: ["#4DA0B0", "#D39D38"]
+    gradient: ["#4DA0B0", "#D39D38"],
+    title: "Dusty",
+    subtitle: "Thanks a lot China 🖕🏻"
   }
 };
 
@@ -94,9 +106,7 @@ Weather.propTypes = {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+    flex: 1
   },
   temp: {
     fontSize: 36,
@@ -107,14 +117,23 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center"
   },
-  title: { color: "white", fontSize: 30, fontWeight: "300", marginBottom: 15 },
+  title: {
+    color: "white",
+    fontSize: 30,
+    fontWeight: "300",
+    marginBottom: 15,
+    textAlign: "left"
+  },
   subtitle: {
     color: "white",
     fontWeight: "600",
-    fontSize: 20
+    fontSize: 20,
+    textAlign: "left"
   },
   textContainer: {
-    paddingHorizontal: 20,
-    alignItems: "flex-start"
+    paddingHorizontal: 30,
+    alignItems: "flex-start",
+    justifyContent: "center",
+    flex: 1
   }
 });

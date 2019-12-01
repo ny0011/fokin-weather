@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "weather app",
+    "githubUrl": "https://github.com/ny0011/fokin-weather"
   }
 }
